@@ -1,0 +1,17 @@
+dgl==1.1.2.post1
+hampel==1.0.2
+hyperopt==0.2.7
+matplotlib==3.8.0
+numpy==1.26.0
+pandas==2.1.1
+scipy==1.11.3
+scraps==0.5.2
+tensorboardX==2.6.2.2
+torch==2.0.1
+torchmetrics==1.2.0
+tqdm==4.66.1
+geneticalgorithm2==6.8.5
+pyomo==6.6.2
+idaes-pse==1.13.0
+aequilibrae==0.9.3
+docplex==2.25.236
