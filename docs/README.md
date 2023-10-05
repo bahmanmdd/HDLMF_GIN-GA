@@ -1,18 +1,14 @@
 
-# Summary of the documentation
-
-
 ## Setup
 
-1. Setup the environment
+1. Seting up the environment
    * Setup an environment using the `requirements.txt` file. This is a pip-friendly list of the high-level python packages required to setup an environment for this project including the version information. So simply create an empty environment and use the command `pip install -r requirements.txt` to setup the environment. MacOS users should replace the `idaes` package, which is not available for mac, with `ipopt`. But before installing packages, please check the "license requirements" section below.
    * Note that if you want the full functionality, you need to acquire a CPLEX license and setup CPLEX first. See more details below under "License requirements" heading.
 2. License requirements 
    * To fully utilize this repository and reproduce the experiments, you will require a CPLEX license (academics can acquire an academic license for free). See instructions [here](https://www.ibm.com/docs/en/icos/22.1.1?topic=cplex-setting-up-python-api). However, this is only necessary for implementing the SORB method. For the experiments reported in [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024), we have provided the SORB method results in csv files in the output directory here and the benchmarking code allows running other methods and benchmarking against the saved results of SORB.
 
 3. Datasets
-   * Datasets used for experiments in [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024) are saved (zip format) in "DatasetsDUE" directory. You can just extract them in the same folder and use them. 
-   * But you can also reproduce the datasets or generate new datasets using `data_due_generate` (instructions below).
+   * You can reproduce the datasets used for experiments in [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024) or generate new datasets using `data_due_generate` (instructions below).
 4. Transport networks 
    * Transport networks used for creating datasets are stored in 'TransportationNetworks' directory and are selected from [here](https://github.com/bstabler/TransportationNetworks).
 5. Config files
@@ -20,7 +16,7 @@
 
 
 
-## Generate datasets
+## Generating datasets
 
 Use `data_due_generate` to generate new datasets with solved instances of DUE problems. 
 1. In `parameters` (the first function), specify the following parameters (current values reproduce [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024)):
@@ -30,7 +26,7 @@ Use `data_due_generate` to generate new datasets with solved instances of DUE pr
    4. variation params (perturbations for problem variation generation)
 2. Run `data_due_generate`. Be aware that this might take days or weeks depending on the size.
 3. Check the "DadatsetsDUE/network" directory for results.
-4. As mentioned above, datasets used for experiments in [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024) are saved (zip format) in "DatasetsDUE" directory. You can just extract them in the same folder and use them if you don't want to reproduce them or generate new datasets. 
+ 
 
 ### Notes:
 
@@ -38,7 +34,6 @@ Use `data_due_generate` to generate new datasets with solved instances of DUE pr
 * You can solve DUE instances with: 
   1. ipopt (open source general solver), which is very reliable but slow (recommended for small networks), particularly for larger networks (e.g., Anaheim)
   2. aequilibriae (specialized solver for DUE), which is much faster (recommended for large networks) but less stable, so it might throw unpredictable errors. This means with this solver, sometimes you might have to run the code a few times to have a complete dataset.
-* I have gone through the pain and prepared datasets in dgl format (zipped) in "DatasetsDUE". Just use them if you don't really need new ones.
 
 
 ## Train-test pipeline
@@ -52,7 +47,7 @@ Use `data_due_generate` to generate new datasets with solved instances of DUE pr
   4. Best models are copied in the "models" directory for inference (from "output/DUE/network/models") but if you train better models, you can replace them.
 
 
-## Benchmark solutions
+## Benchmarking solutions
 
 Use `ndp_la_bm` & `ndp_ls_bm` for benchmarking NDP-LA and NDP-LS problems respectively. They have a very similar structure except for minor parameter differences based on each problem.
 
