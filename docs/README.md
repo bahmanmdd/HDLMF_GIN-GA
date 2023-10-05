@@ -5,7 +5,7 @@
 ## Setup
 
 1. Setup the environment
-   * Setup an environment using the `requirements.txt` file. This is a pip-friendly list of the high-level python packages required to setup an environment for this project including the version information. So simply create an empty environment and use the command `pip install -r requirements.txt` to setup the environment. But before installing packages, please check the "license requirements" section below.
+   * Setup an environment using the `requirements.txt` file. This is a pip-friendly list of the high-level python packages required to setup an environment for this project including the version information. So simply create an empty environment and use the command `pip install -r requirements.txt` to setup the environment. MacOS users should replace the `idaes` package, which is not available for mac, with `ipopt`. But before installing packages, please check the "license requirements" section below.
    * Note that if you want the full functionality, you need to acquire a CPLEX license and setup CPLEX first. See more details below under "License requirements" heading.
 2. License requirements 
    * To fully utilize this repository and reproduce the experiments, you will require a CPLEX license (academics can acquire an academic license for free). See instructions [here](https://www.ibm.com/docs/en/icos/22.1.1?topic=cplex-setting-up-python-api). However, this is only necessary for implementing the SORB method. For the experiments reported in [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024), we have provided the SORB method results in csv files in the output directory here and the benchmarking code allows running other methods and benchmarking against the saved results of SORB.
