@@ -42,7 +42,6 @@ def scenarios():
     methods = ['SORB', 'GAGNN']  # the first one should be an exact solution method
 
     max_time = 60 * 60 * 4
-    list_time = [60, 120, 300, 600, 1200]
     list_time = [60]
     list_swpr = [0.25, 0.5, 0.75]
     list_lanes_now = [2, 4]
