@@ -1,4 +1,10 @@
 
+This repository is related to the following article entitled "A hybrid deep-learning-metaheuristic framework for bi-level network design problems" 
+[Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024)
+
+For theory and methodology details, please refer to the article.
+
+
 ## Setup
 
 1. Seting up the environment
