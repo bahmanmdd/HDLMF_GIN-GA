@@ -4,6 +4,9 @@ This repository is related to the following article entitled "A hybrid deep-lear
 
 For theory and methodology details, please refer to the article.
 
+The reproducability of the results is verified by codeocean via the following computation capsule based on this repository:
+[A hybrid deep-learning-metaheuristic framework for bi-level network design problems (GIN-GA23)](https://doi.org/10.24433/CO.0943845.v1)
+
 
 ## Setup
 
