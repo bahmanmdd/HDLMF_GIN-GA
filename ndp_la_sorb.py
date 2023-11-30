@@ -9,7 +9,6 @@ import time
 import copy
 import numpy as np
 import docplex.mp
-import gurobipy
 import idaes
 from docplex.mp.model import Model
 import pyomo.environ as pyo
