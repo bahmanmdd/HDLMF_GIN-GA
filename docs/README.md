@@ -1,3 +1,5 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-hybrid-deep-learning-metaheuristic/equilibrium-traffic-assignment-on-equilibrium)](https://paperswithcode.com/sota/equilibrium-traffic-assignment-on-equilibrium?p=a-hybrid-deep-learning-metaheuristic)
+
 
 This repository is related to the following article entitled "A hybrid deep-learning-metaheuristic framework for bi-level network design problems" 
 [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024)
