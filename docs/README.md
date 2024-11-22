@@ -1,3 +1,10 @@
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-hybrid-deep-learning-metaheuristic/bilevel-optimization-on-equilibrium-traffic-1)](https://paperswithcode.com/sota/bilevel-optimization-on-equilibrium-traffic-1?p=a-hybrid-deep-learning-metaheuristic)
+	
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-hybrid-deep-learning-metaheuristic/bilevel-optimization-on-equilibrium-traffic-2)](https://paperswithcode.com/sota/bilevel-optimization-on-equilibrium-traffic-2?p=a-hybrid-deep-learning-metaheuristic)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-hybrid-deep-learning-metaheuristic/bilevel-optimization-on-equilibrium-traffic)](https://paperswithcode.com/sota/bilevel-optimization-on-equilibrium-traffic?p=a-hybrid-deep-learning-metaheuristic)
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-hybrid-deep-learning-metaheuristic/equilibrium-traffic-assignment-on-equilibrium)](https://paperswithcode.com/sota/equilibrium-traffic-assignment-on-equilibrium?p=a-hybrid-deep-learning-metaheuristic)
 
 
