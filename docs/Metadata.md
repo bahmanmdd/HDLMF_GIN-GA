@@ -97,7 +97,7 @@ If you use these datasets in your research, please cite the following paper and 
 
 Paper citation: 
 
-Madadi B, de Almeida Correia GH. A hybrid deep-learning-metaheuristic framework for bi-level network design problems. Expert Systems with Applications. 2024 Jun 1;243:122814.
+Madadi B, de Almeida Correia GH. A hybrid deep-learning-metaheuristic framework for bi-level network design problems. Expert Systems with Applications. 2024 Jun 1;243:122814. https://doi.org/10.1016/j.eswa.2023.122814
 
 Dataset citation: 
 
