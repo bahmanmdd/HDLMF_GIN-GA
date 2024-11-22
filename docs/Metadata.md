@@ -1,7 +1,9 @@
 
 # Equilibrium-Traffic-Networks
 
-This repository contains three DGL datasets generated for the study "A hybrid deep-learning-metaheuristic framework for bi-level network design problems" by Bahman Madadi and Gonçalo H. de Almeida Correia, published in Expert Systems with Applications. The datasets are generated and used to train and evaluate models for solving the User Equilibrium (UE) problem on three transportation networks (Sioux-Falls, Eastern-Massachusetts, and Anaheim) from the well-known "transport networks for research" repository.
+This document describes the datasets generated for and used in the study "A hybrid deep-learning-metaheuristic framework for bi-level network design problems" by Bahman Madadi and Gonçalo H. de Almeida Correia, published in Expert Systems with Applications. The datasets are generated and used to train and evaluate models for solving the User Equilibrium (UE) problem on three transportation networks (Sioux-Falls, Eastern-Massachusetts, and Anaheim) from the well-known "transport networks for research" repository. You can just download the datasets from [this repository](https://doi.org/10.6084/m9.figshare.27889251.v1) with the comprehensive metadata. 
+
+Dataset citation: Madadi, Bahman (2024). Equilibrium-Traffic-Networks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.27889251.v1
 
 ## Metadata
 
@@ -87,12 +89,19 @@ This script contains the classes and functions for preparing the datasets and co
 
 - [A hybrid deep-learning-metaheuristic framework for bi-level network design problems](https://doi.org/10.1016/j.eswa.2023.122814)
 - [GitHub Repository: HDLMF_GIN-GA](https://github.com/bahmanmdd/HDLMF_GIN-GA)
+- [Dataset repository](https://doi.org/10.6084/m9.figshare.27889251.v1)
 
 ## Citation
 
-If you use these datasets in your research, please cite the following paper:
+If you use these datasets in your research, please cite the following paper and dataset:
+
+Paper citation: 
 
 Madadi B, de Almeida Correia GH. A hybrid deep-learning-metaheuristic framework for bi-level network design problems. Expert Systems with Applications. 2024 Jun 1;243:122814.
+
+Dataset citation: 
+
+Madadi, Bahman (2024). Equilibrium-Traffic-Networks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.27889251.v1
 
 ---
 
