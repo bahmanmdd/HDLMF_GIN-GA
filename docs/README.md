@@ -17,10 +17,12 @@ The reproducability of the results is verified by codeocean via the following co
    * To fully utilize this repository and reproduce the experiments, you will require a CPLEX license (academics can acquire an academic license for free). See instructions [here](https://www.ibm.com/docs/en/icos/22.1.1?topic=cplex-setting-up-python-api). However, this is only necessary for implementing the SORB method. For the experiments reported in [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024), we have provided the SORB method results in csv files in the output directory here and the benchmarking code allows running other methods and benchmarking against the saved results of SORB.
 
 3. Datasets
-   * You can reproduce the datasets used for experiments in [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024) or generate new datasets using `data_due_generate` (instructions below).
-4. Transport networks 
+   * Generate: You can reproduce the datasets used for experiments in [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024) or generate new datasets using `data_due_generate` (instructions below).
+   * Download: Alternatively you can just download the datasets from [this repository](https://doi.org/10.6084/m9.figshare.27889251.v1) with the comprehensive metadata.
+   * Dataset citation: Madadi, Bahman (2024). Equilibrium-Traffic-Networks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.27889251.v1
+5. Transport networks 
    * Transport networks used for creating datasets are stored in 'TransportationNetworks' directory and are selected from [here](https://github.com/bstabler/TransportationNetworks).
-5. Config files
+6. Config files
    * Hyperparameters (for training GNNs) are saved in config files in the "configs" directory for each network and model, but you can change them. 
 
 
