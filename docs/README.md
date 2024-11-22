@@ -82,5 +82,15 @@ I recommend running the benchmarks one case study at a time to avoid any issue.
       1. SORB
       2. GIN-GA
 
+## Citation
 
+If you use the code and data in your research, please cite the following paper and dataset:
+
+Paper citation: 
+
+Madadi B, de Almeida Correia GH. A hybrid deep-learning-metaheuristic framework for bi-level network design problems. Expert Systems with Applications. 2024 Jun 1;243:122814. https://doi.org/10.1016/j.eswa.2023.122814
+
+Dataset citation: 
+
+Madadi, Bahman (2024). Equilibrium-Traffic-Networks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.27889251.v1
 
