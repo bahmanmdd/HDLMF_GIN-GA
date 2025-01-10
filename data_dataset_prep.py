@@ -49,7 +49,7 @@ class DUE(Dataset):
 
         for graph_idx in range(len(edge_label_data)):
             # prep graph data
-            edges = [[int(edge[1:-1].split(',')[0]), int(edge[1:-1].split(',')[1])] for edge in edge_label_data]
+            edges = [[int(edge[1:-1].split(',')[0]) - 1, int(edge[1:-1].split(',')[1]) - 1] for edge in edge_label_data]
             num_nodes = len(np.unique(edges))
             num_edges = len(edges)
             demand = np.zeros((num_nodes, num_nodes))
@@ -144,12 +144,7 @@ class DUEDataset(Dataset):
         graphs, labels = map(list, zip(*samples))
         # Edge classification labels need to be flattened to 1D lists
         labels = torch.FloatTensor(np.array(list(itertools.chain(*labels))))
-        # tab_sizes_n = [ graphs[i].number_of_nodes() for i in range(len(graphs))]
-        # tab_snorm_n = [ torch.FloatTensor(size,1).fill_(1./float(size)) for size in tab_sizes_n ]
-        # snorm_n = torch.cat(tab_snorm_n).sqrt()
-        # tab_sizes_e = [ graphs[i].number_of_edges() for i in range(len(graphs))]
-        # tab_snorm_e = [ torch.FloatTensor(size,1).fill_(1./float(size)) for size in tab_sizes_e ]
-        # snorm_e = torch.cat(tab_snorm_e).sqrt()
+
         batched_graph = dgl.batch(graphs)
 
         return batched_graph, labels
@@ -160,11 +155,6 @@ class DUEDataset(Dataset):
         graphs, labels = map(list, zip(*samples))
         # Edge classification labels need to be flattened to 1D lists
         labels = torch.LongTensor(np.array(list(itertools.chain(*labels))))
-        # tab_sizes_n = [ graphs[i].number_of_nodes() for i in range(len(graphs))]
-        # tab_snorm_n = [ torch.FloatTensor(size,1).fill_(1./float(size)) for size in tab_sizes_n ]
-        # snorm_n = tab_snorm_n[0][0].sqrt()
-
-        # batched_graph = dgl.batch(graphs)
 
         g = graphs[0]
         adj = self._sym_normalize_adj(g.adjacency_matrix().to_dense())
