@@ -27,7 +27,7 @@ The reproducability of the results is verified by codeocean via the following co
 
 3. Datasets
    * Generate: You can reproduce the datasets used for experiments in [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024) or generate new datasets using `data_due_generate` (instructions below).
-   * Download: Alternatively you can just download the datasets from [this repository](https://doi.org/10.6084/m9.figshare.27889251.v1) with the comprehensive metadata.
+   * Download: Alternatively you can just download the datasets from [this repository](https://doi.org/10.6084/m9.figshare.27889251.v3) with the comprehensive metadata. It is recommended to use the pytorch geometric (pyg) datasets (added in the latest update) to avoid potential compatibility issues with different versions of dgl. The underlying data is the same and the existing code base works with new datasets. You only need to make sure the dataset names mathce the names in the config files.
    * Dataset citation: Madadi, Bahman (2024). Equilibrium-Traffic-Networks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.27889251.v1
 5. Transport networks 
    * Transport networks used for creating datasets are stored in 'TransportationNetworks' directory and are selected from [here](https://github.com/bstabler/TransportationNetworks).
