@@ -9,12 +9,9 @@
 
 
 This repository is related to the following article entitled "A hybrid deep-learning-metaheuristic framework for bi-level network design problems" 
-[Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024)
+[Madadi and Correia (2023)](https://doi.org/10.1016/j.eswa.2023.122814)
 
 For theory and methodology details, please refer to the article.
-
-The reproducability of the results is verified by codeocean via the following computation capsule based on this repository:
-[A hybrid deep-learning-metaheuristic framework for bi-level network design problems (GIN-GA23)](https://doi.org/10.24433/CO.0943845.v1)
 
 
 ## Setup
@@ -23,10 +20,10 @@ The reproducability of the results is verified by codeocean via the following co
    * Setup an environment using the `requirements.txt` file. This is a pip-friendly list of the high-level python packages required to setup an environment for this project including the version information. So simply create an empty environment and use the command `pip install -r requirements.txt` to setup the environment. With the specified package versions, the environment should work fine with Windows, Mac and Linux. But before installing packages, please check the "license requirements" section below.
    * Note that if you want the full functionality, you need to acquire a CPLEX license and setup CPLEX first. See more details below under "License requirements" heading.
 2. License requirements 
-   * To fully utilize this repository and reproduce the experiments, you will require a CPLEX license (academics can acquire an academic license for free). See instructions [here](https://www.ibm.com/docs/en/icos/22.1.1?topic=cplex-setting-up-python-api). However, this is only necessary for implementing the SORB method. For the experiments reported in [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024), we have provided the SORB method results in csv files in the output directory here and the benchmarking code allows running other methods and benchmarking against the saved results of SORB.
+   * To fully utilize this repository and reproduce the experiments, you will require a CPLEX license (academics can acquire an academic license for free). See instructions [here](https://www.ibm.com/docs/en/icos/22.1.1?topic=cplex-setting-up-python-api). However, this is only necessary for implementing the SORB method. For the experiments reported in [Madadi and Correia (2023)](https://doi.org/10.1016/j.eswa.2023.122814), we have provided the SORB method results in csv files in the output directory here and the benchmarking code allows running other methods and benchmarking against the saved results of SORB.
 
 3. Datasets
-   * Generate: You can reproduce the datasets used for experiments in [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024) or generate new datasets using `data_due_generate` (instructions below).
+   * Generate: You can reproduce the datasets used for experiments in [Madadi and Correia (2023)](https://doi.org/10.1016/j.eswa.2023.122814) or generate new datasets using `data_due_generate` (instructions below).
    * Download: Alternatively you can just download the datasets from [this repository](https://doi.org/10.6084/m9.figshare.27889251.v3) with the comprehensive metadata. It is recommended to use the pytorch geometric (pyg) datasets (added in the latest update) to avoid potential compatibility issues with different versions of dgl. The underlying data is the same and the existing code base works with new datasets. You only need to make sure the dataset names mathce the names in the config files.
    * Dataset citation: Madadi, Bahman (2024). Equilibrium-Traffic-Networks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.27889251.v1
 5. Transport networks 
@@ -39,8 +36,8 @@ The reproducability of the results is verified by codeocean via the following co
 ## Generating datasets
 
 Use `data_due_generate` to generate new datasets with solved instances of DUE problems. 
-1. In `parameters` (the first function), specify the following parameters (current values reproduce [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024)):
-   1. dataset params (size, etc.) (note that different dataset sizes are used for different networks, for details refer to [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024))
+1. In `parameters` (the first function), specify the following parameters (current values reproduce [Madadi and Correia (2023)](https://doi.org/10.1016/j.eswa.2023.122814):
+   1. dataset params (size, etc.) (note that different dataset sizes are used for different networks, for details refer to [Madadi and Correia (2023)](https://doi.org/10.1016/j.eswa.2023.122814)
    2. problem params (network, etc.)
    3. solution params (solver choice and options)
    4. variation params (perturbations for problem variation generation)
@@ -71,7 +68,7 @@ Use `data_due_generate` to generate new datasets with solved instances of DUE pr
 
 Use `ndp_la_bm` & `ndp_ls_bm` for benchmarking NDP-LA and NDP-LS problems respectively. They have a very similar structure except for minor parameter differences based on each problem.
 
-Just define scenario and variation parameters in `scenarios` (the first function) and run. Parameters for each method are specified in the first function in `problem_method` submodules (e.g., `ndp_la_sorb`). Current values reproduce the experiments in [Madadi and Correia (2023)](https://arxiv.org/abs/2303.06024).
+Just define scenario and variation parameters in `scenarios` (the first function) and run. Parameters for each method are specified in the first function in `problem_method` submodules (e.g., `ndp_la_sorb`). Current values reproduce the experiments in [Madadi and Correia (2023)](https://doi.org/10.1016/j.eswa.2023.122814).
 
 The output for each case study (network) will be saved in "output/problem/network". There will be a summary and a separate directory for detailed results of each solution method.
 
@@ -97,9 +94,9 @@ If you use the code and data in your research, please cite the following paper a
 
 Paper citation: 
 
-Madadi B, de Almeida Correia GH. A hybrid deep-learning-metaheuristic framework for bi-level network design problems. Expert Systems with Applications. 2024 Jun 1;243:122814. https://doi.org/10.1016/j.eswa.2023.122814
+Madadi B, de Almeida Correia GH. A hybrid deep-learning-metaheuristic framework for bi-level network design problems. Expert Systems with Applications. 2024 Jun 1;243:122814. https://doi.org/10.1016/j.eswa.2023.122814 [Link](https://doi.org/10.1016/j.eswa.2023.122814)
 
 Dataset citation: 
 
-Madadi, Bahman (2024). Equilibrium-Traffic-Networks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.27889251.v1
+Madadi, Bahman (2024). Equilibrium-Traffic-Networks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.27889251.v3 [link](https://doi.org/10.6084/m9.figshare.27889251.v3)
 
