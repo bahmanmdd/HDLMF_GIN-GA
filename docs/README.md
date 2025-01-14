@@ -25,7 +25,7 @@ For theory and methodology details, please refer to the article.
 3. Datasets
    * Generate: You can reproduce the datasets used for experiments in [Madadi and Correia (2023)](https://doi.org/10.1016/j.eswa.2023.122814) or generate new datasets using `data_due_generate` (instructions below).
    * Download: Alternatively you can just download the datasets from [this repository](https://doi.org/10.6084/m9.figshare.27889251.v3) with the comprehensive metadata. It is recommended to use the pytorch geometric (pyg) datasets (added in the latest update) to avoid potential compatibility issues with different versions of dgl. The underlying data is the same and the existing code base works with new datasets. You only need to make sure the dataset names mathce the names in the config files.
-   * Dataset citation: Madadi, Bahman (2024). Equilibrium-Traffic-Networks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.27889251.v1
+   * Dataset citation: Madadi, Bahman (2024). Equilibrium-Traffic-Networks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.27889251.v3
 5. Transport networks 
    * Transport networks used for creating datasets are stored in 'TransportationNetworks' directory and are selected from [here](https://github.com/bstabler/TransportationNetworks).
 6. Config files
@@ -94,9 +94,9 @@ If you use the code and data in your research, please cite the following paper a
 
 Paper citation: 
 
-Madadi B, de Almeida Correia GH. A hybrid deep-learning-metaheuristic framework for bi-level network design problems. Expert Systems with Applications. 2024 Jun 1;243:122814. https://doi.org/10.1016/j.eswa.2023.122814 [Link](https://doi.org/10.1016/j.eswa.2023.122814)
+Madadi B, de Almeida Correia GH. A hybrid deep-learning-metaheuristic framework for bi-level network design problems. Expert Systems with Applications. 2024 Jun 1;243:122814. https://doi.org/10.1016/j.eswa.2023.122814
 
 Dataset citation: 
 
-Madadi, Bahman (2024). Equilibrium-Traffic-Networks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.27889251.v3 [link](https://doi.org/10.6084/m9.figshare.27889251.v3)
+Madadi, Bahman (2024). Equilibrium-Traffic-Networks. figshare. Dataset. https://doi.org/10.6084/m9.figshare.27889251.v3 
 
